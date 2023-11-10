@@ -1,6 +1,5 @@
 #!/bin/sh
-gomod_modified=$(git status | grep go\.mod)
-if [ -n "$gomod_modified" ]; then
+if [ -n "$(git status | grep go\.mod)" ]; then
   gomodlint
   exit_code=$?
   if [ $exit_code -ne 0 ]; then
