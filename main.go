@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	var a string
 	var dirPath string
 	if len(os.Args) > 1 && os.Args[1] != "" {
 		dirPath = os.Args[1]
