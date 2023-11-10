@@ -14,7 +14,9 @@ if git status | grep -q ":\s*go\.mod"; then
 fi
 ```
 
-## Usage in CI
+## Usage in GitHub Workflow
+
+You should have a Go language installed in your workflow. Then you can use this action as follows:
 
 ```yaml
     - name: go.mod validation
@@ -27,5 +29,6 @@ Free to use & modify - [MIT License](https://opensource.org/license/mit/)
 
 ## Used by:
 
-- [github.com/sneat-co](https://github.com/sneat-co/) - an extendable platform that allows to build apps with extension modules.
+- [github.com/sneat-co](https://github.com/sneat-co/) - an extendable platform that allows to build apps with extension
+  modules.
 - [DALgo](https://github.com/dal-go) - Database Abstraction Layer in GO language
