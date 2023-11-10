@@ -1,3 +1,7 @@
 #!/bin/sh
-gomodlint
+gomod_modified=$(git status | grep go\.mod)
+if [ -n "$gomod_modified" ]; then
+  gomodlint
+fi
+
 golangci-lint run
