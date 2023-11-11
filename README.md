@@ -5,7 +5,7 @@ A linter for `go.mod` file - validates NO `replace` directive is committed
 ## Usage in pre-commit hook
 
 ```shell
-if git status | grep -q ":\s*go\.mod"; then
+if git diff --name-only --cached | grep -q ":\s*go\.mod"; then
   gomodlint
   exit_code=$?
   if [ $exit_code -ne 0 ]; then
