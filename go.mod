@@ -6,4 +6,4 @@ toolchain go1.25.5
 
 //replace golang.org/x/mod v0.14.0 => golang.org/x/mod v0.14.0
 
-require golang.org/x/mod v0.31.0
+require golang.org/x/mod v0.32.0
