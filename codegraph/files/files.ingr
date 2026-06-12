@@ -1,0 +1,20 @@
+# INGR.io | files: $ID, content_hash, language, size:int, node_count:int, errors
+"lint.go"
+"97befadede9a0445ef49baa8f4d18baf3b52a46ba0f8a2296fc52e7b939bc587"
+"go"
+583
+5
+null
+"main.go"
+"9d249097e8ce68c7ff007ef02157641eb83de2caf8b271da841f8c94ca5ecf60"
+"go"
+610
+4
+null
+"rule_no_replace.go"
+"7871ad6a788abb2a7b0a5bd01d6fb69baa03a516217d708c7fd9944e44f40b85"
+"go"
+222
+4
+null
+# 3 records
