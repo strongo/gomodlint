@@ -5,14 +5,13 @@ import (
 	"os"
 )
 
+var osExit = os.Exit
+
 func main() {
 	var dirPath string
-	if len(os.Args) > 1 && os.Args[1] != "" {
+	if len(os.Args) > 1 {
 		dirPath = os.Args[1]
-	} else {
-		dirPath = "."
 	}
-
 	if dirPath == "" {
 		dirPath = "."
 	}
@@ -34,5 +33,5 @@ func main() {
 		returnCode = 1
 	}
 	fmt.Println("go.mod is invalid:", err)
-	os.Exit(returnCode)
+	osExit(returnCode)
 }
