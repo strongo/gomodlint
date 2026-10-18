@@ -26,7 +26,5 @@ jobs:
       # main once CI lands would surprise consumers pinning an exact tag.
       disable-version-bumping: true
       go_version: '1.27.0'
-      # Measured (go test ./... -coverprofile + go tool cover -func): 0.0%.
-      # No _test.go files exist yet; floor set at the true, honestly-measured
-      # value.
-      min_test_coverage_percent: 0
+      # Enforce 100% test coverage gate
+      min_test_coverage_percent: 100
